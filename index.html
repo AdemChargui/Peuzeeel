@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="password-modal" class="modal">
+            <div class="modal-content">
+                <h2>Enter Password</h2>
+                <div class="input-container">
+                    <input type="password" id="password-input" placeholder="Password">
+                    <button class="eye-icon" id="eye-icon" onclick="togglePasswordVisibility()">&#128065;</button> <!-- Reverted to the original eye icon -->
+                </div>
+                <button id="password-submit">Submit</button>
+                <p id="error-message" class="hidden">YAH Incorrect password 😡.</p>
+            </div>
+        </div>
+        <div id="puzzle1-container" class="puzzle-container"></div>
+        <div id="puzzle2-container" class="puzzle-container"></div>
+        <div id="puzzle3-container" class="puzzle-container"></div>
+        <div id="message" class="hidden">I Love You Yosr , do you wanna marry me ? 🥹🎀!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
